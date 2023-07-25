@@ -1,4 +1,5 @@
 body, html{
+    background:black;
     height:100%;
     margin:0%;
     font-size:16px;
@@ -8,32 +9,37 @@ body, html{
     color:#666;
 }
 
-.pimg1, .pimg2, .pimg3 {
+.space1, .space2, .space3, .space4, .space5 {
     position:relative;
-    opacity:0.70;
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
-
-    /*
-    fixed = parallax
-    scroll = normal
-    */
+    /*parallex effect*/
     background-attachment:fixed;
 }
 
-.pimg1{
+.space1{
     background-image:url("photos/G02_GroupShot_Edits.jpeg");
     min-height:100%;
 }
 
-.pimg2{
+.space2{
     background-image:url("photos/journey-silhouette.png");
     min-height:400px;
 }
 
-.pimg3{
+.space3{
     background-image:url("photos/earthview-desktop.png");
+    min-height:400px;
+}
+
+.space4{
+    background-image:url("photos/Screen Shot 2023-07-18 at 8.09.05 PM.png");
+    min-height:400px;
+}
+
+.space5{
+    background-image:url("photos/footer-desktop.png");
     min-height:400px;
 }
 
@@ -42,17 +48,13 @@ body, html{
     padding:50px 80px;
 }
 
-.section-light{
-    background-color:#f4f4f4;
-    color:#666;
-}
-
 .section-dark{
-    background-color:#282e34;
+    background-color: black;
+    /*background-color:#282e34;*/
     color:#ddd;
 }
 
-.ptext{
+.ptext1, .ptext2, .ptext3, .ptext4, .ptext5 {
     position:absolute;
     top:50%;
     width:100%;
@@ -63,18 +65,38 @@ body, html{
     text-transform:uppercase;
 }
 
-.ptext .border{
+.ptext1 .border{
     background-color:#111;
     color:white;
     padding:20px;
 }
 
-.ptext .border.trans{
+.ptext2, .ptext3, .ptext4, .ptext5, .border.trans{
     background-color:transparent;
+    color:white;
+}
+
+button{
+    background:#c80afb;
+    align-items: center;
+    border-radius: 60px;
+    color:#fff;
+    cursor:pointer;
+    display:inline-flex;
+    height:46px;
+    overflow:hidden;
+    padding: 0 24px;
+    position: relative;
+    font-family: sans-serif;
+    flex-direction: row;
+}
+
+.marsphoto{
+    color:white;
 }
 
 @media(max-width:568px){
-    .pimg1, .pimg2, .pimg3{
+    .space1, .space2, .space3, .space4, .space5{
         background-attachment:scroll;
 
     }
