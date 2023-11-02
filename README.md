@@ -1,4 +1,4 @@
-# Final-Project
+# Virgin Galactic Clone
 This project was inspired by one of my favorite websites Virgin Galatic(https://www.virgingalactic.com/). When I first started attempting to teach my web development I dreamed of being able to build a website similiar.
 
 # Parallax Effect
